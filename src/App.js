@@ -1,18 +1,10 @@
 import React from "react";
-import CountHooks from "./Component/Hooks/CountHooks";
-import ReactBootstrap from "./Component/ReactBootstrap";
+import BasicForm from "./BasicForm";
 function App()  {
   return (
-    <div>
-      {/* <StateMsg />
-      <Counter />
-      <Clock /> */}
-      {/* <ParentChild /> */}
-      {/* <List /> */}
-      <ReactBootstrap />
-     {/* //Hoooks Representation */}
-     <CountHooks />
-    </div>
+    <>
+    <BasicForm />
+    </>
   );
 }
 

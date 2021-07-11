@@ -14,13 +14,12 @@ class ParentChild extends Component {
     }
     
     greeting(child){
-        alert(`${this.state.msg} , ${child}`)
+        alert(this.state.msg)
     }
     render() {
         return (
             <div>
-                <ChildComponent msg ={this.greeting}/>
-                <h2>Hello Bangladesh</h2>
+                <ChildComponent msg ={this.greeting}/>    
             </div>
         )
     }

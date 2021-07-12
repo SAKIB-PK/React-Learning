@@ -1,9 +1,9 @@
 import React from "react";
-import BasicForm from "./BasicForm";
+import LIfeCycleA from "./Component/LIfeCycleA";
 function App()  {
   return (
     <>
-    <BasicForm />
+    <LIfeCycleA />
     </>
   );
 }

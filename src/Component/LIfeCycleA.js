@@ -6,7 +6,7 @@ class LIfeCycleA extends Component {
         super(props)
     
         this.state = {
-            name:'Life Cycle A'
+            name:'LifeCycleA State'
         }
         console.log(`LifeCycleA Constructor`);
     }
@@ -18,12 +18,25 @@ class LIfeCycleA extends Component {
     componentDidMount(){
         console.log(`LifeCycleA ComponentDidMount.`)
     }
+    shouldComponentUpdate(){
+        console.log("LifeCycleA ShouldComponentUpdate");
+        return true
+    }
+    componentDidUpdate(prevProps,prevState,snapshot){
+        console.log('LifeCycleA ComponentDidUpdate')
+    }
+    changeText =()=>{
+        this.setState({
+            name:"LifeCycleA Update"
+        })
+    }
     render() {
         console.log(`LifeCycleA render()`)
         return (
             <div>
-                <h2>LIfeCycleA Dom Text</h2>
+                <h2>{this.state.name}</h2>
                 <LifeCycleB />
+                <button onClick={this.changeText}>Update</button>
             </div>
         )
     }

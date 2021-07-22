@@ -1,9 +1,12 @@
-import React from "react";
-import LIfeCycleA from "./Component/LIfeCycleA";
+import React, { useState } from "react";
+import UseEffect from "./Component/Hooks/UseEffect";
+
 function App()  {
+  const [show, setShow] = useState(true)
   return (
     <>
-    <LIfeCycleA />
+      <div>{show && <UseEffect/>}</div>
+      <button onClick={()=>setShow(prev =>!prev)}>{!show?'Show Post' : "Hide Post"}</button>
     </>
   );
 }

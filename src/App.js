@@ -1,13 +1,17 @@
-import React, { useState } from "react";
-import UseEffect from "./Component/Hooks/UseEffect";
+import React from "react";
+import DataFetchingTwo from "./test/DataFetching/DataFetchingTwo";
+
+
 
 function App()  {
-  const [show, setShow] = useState(true)
+  
+
+  
   return (
     <>
-      <div>{show && <UseEffect/>}</div>
-      <button onClick={()=>setShow(prev =>!prev)}>{!show?'Show Post' : "Hide Post"}</button>
+      <DataFetchingTwo />
     </>
+    
   );
 }
 
